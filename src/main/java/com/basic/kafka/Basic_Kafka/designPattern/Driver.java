@@ -1,6 +1,9 @@
 package com.basic.kafka.Basic_Kafka.designPattern;
 
-// File: model/Driver.java
+/**
+ * File: model/Driver.java
+ */
+
 public class Driver {
     public final String driverId;
     public volatile double lat;
