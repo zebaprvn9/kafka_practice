@@ -1,6 +1,7 @@
 package com.basic.kafka.Basic_Kafka.producer;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 
@@ -21,6 +22,8 @@ public class ProducerDemo {
 
         // create the producer
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
+
+
 
         // create a producer record
         ProducerRecord<String, String> record =
