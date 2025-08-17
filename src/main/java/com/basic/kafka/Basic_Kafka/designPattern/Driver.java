@@ -11,6 +11,8 @@ public class Driver {
     public volatile double rating;     // optional: for strategy variants
     public volatile double etaSeconds; // optional: precomputed ETA to hotspot
 
+
+
     public Driver(String driverId, double lat, double lon, double rating) {
         this.driverId = driverId;
         this.lat = lat;
