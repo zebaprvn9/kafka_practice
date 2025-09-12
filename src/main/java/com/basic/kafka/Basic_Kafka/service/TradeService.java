@@ -22,6 +22,9 @@ public class TradeService {
         this.tradeRepository = tradeRepository;
     }
 
+    @Autowired
+    TradeRepository tradeRepository1;
+
 
     /**
      * Kafka consumer will call this for every message

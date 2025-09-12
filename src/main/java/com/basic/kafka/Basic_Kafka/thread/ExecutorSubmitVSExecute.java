@@ -14,7 +14,7 @@ public class ExecutorSubmitVSExecute {
         //execute method does not return any value as future and only take runnable as input
         //no result, exception is visible
         for(int i = 0; i < 3; i++) {
-            executorService.submit(runnableWorker);
+            executorService.execute(runnableWorker);
         }
 
         ExecutorService executorServiceSubmit = Executors.newFixedThreadPool(3);

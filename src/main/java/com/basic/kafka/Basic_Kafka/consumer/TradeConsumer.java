@@ -12,6 +12,7 @@ import org.springframework.kafka.support.serializer.JsonDeserializer;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
@@ -22,11 +23,13 @@ public class TradeConsumer {
     @Autowired
     private TradeRepository tradeRepository;
 
+    /**
+     * sdhbajsdhga
+     */
     public void consumeData() {
         String bootstrapServers = "localhost:9092";
         String groupId = "my-consumer-group";
         String topic = "my-topic";
-
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupId);

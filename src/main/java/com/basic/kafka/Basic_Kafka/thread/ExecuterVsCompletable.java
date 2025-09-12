@@ -13,7 +13,7 @@ public class ExecuterVsCompletable {
         });
         Integer result = future.get();
 
-        //we are blocked at .get() funciton and we cant perform anything until get is finished
+        //we are blocked at .get() function and we cant perform anything until get is finished
 
         CompletableFuture<Integer> completableFuture = CompletableFuture.supplyAsync(()->{
             return 5;
@@ -28,5 +28,9 @@ public class ExecuterVsCompletable {
         });
 
         int finalAmount = completableFuture.get();
+        Map<String, String> map = new HashMap<>();
+        map.put(null, "1");
+        map.put(null, "2");
+        System.out.println(map);
     }
 }

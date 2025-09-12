@@ -30,7 +30,7 @@ class BTreeSearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,3};
+        int arr[] = {1,3,0};
         Set<String> s = new TreeSet<>();
 
         System.out.print(search(arr, 0));
